@@ -21,15 +21,15 @@
         </slot>
       </div>
     </div>
-    <year-picker
+    <!-- <year-picker
       v-show="viewShown === 'year'"
       v-model:pageDate="pageDate"
       :selected="modelValue"
       :lowerLimit="lowerLimit"
       :upperLimit="upperLimit"
       @select="selectYear"
-    />
-    <month-picker
+    /> -->
+    <!-- <month-picker
       v-show="viewShown === 'month'"
       v-model:pageDate="pageDate"
       :selected="modelValue"
@@ -40,7 +40,7 @@
       :headingFormat="monthHeadingFormat"
       :locale="locale"
       @back="viewShown = 'year'"
-    />
+    /> -->
     <day-picker
       v-show="viewShown === 'day'"
       v-model:pageDate="pageDate"
@@ -54,7 +54,7 @@
       @select="selectDay"
       @back="viewShown = 'month'"
     />
-    <time-picker
+    <!-- <time-picker
       v-show="viewShown === 'time'"
       v-model:pageDate="pageDate"
       :visible="viewShown === 'time'"
@@ -62,7 +62,7 @@
       :disabledTime="disabledTime"
       @select="selectTime"
       @back="() => (startingView === 'time' && minimumView === 'time') ? null : viewShown = 'day'"
-    />
+    /> -->
   </div>
 </template>
 
